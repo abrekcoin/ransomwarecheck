@@ -7,7 +7,7 @@ import (
 	"ransomwarecheck/models"
 
 )
-//
+
 func Create() {
 
 	file, err := os.Create(RandomString(10) + ".txt")
