@@ -1,0 +1,3 @@
+Open Administrative tools (by Windows search or by navigating through control panel), click “Local Security Policy” -> Pull open “Local Policies” -> “Audit Policy” -> Select “Audit object access” and choose Success and Failure, then click apply and ok.
+
+Install-Module NtfsSecurity

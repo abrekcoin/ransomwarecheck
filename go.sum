@@ -1,0 +1,4 @@
+github.com/abdfnx/gosh v0.3.9 h1:/jZXpHeQkfGScfaLrag/cr5RwG3/kU5GQKqsBBykpQ8=
+github.com/abdfnx/gosh v0.3.9/go.mod h1:bho3zdOB7bNUOZDeI5+CSjoiF+MHmzHWqHHDAQiCq1c=
+github.com/howeyc/fsnotify v0.9.0 h1:0gtV5JmOKH4A8SsFxG2BczSeXWWPvcMT0euZt5gDAxY=
+github.com/howeyc/fsnotify v0.9.0/go.mod h1:41HzSPxBGeFRQKEEwgh49TRw/nKBsYZ2cF1OzPjSJsA=
