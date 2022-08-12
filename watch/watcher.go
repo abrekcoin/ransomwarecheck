@@ -8,11 +8,16 @@ import (
 )
 func Watch(target string) {
 	//enable auditing for created file
-	err, _, errout := gosh.RunOutput("Add-NTFSAudit -Path " + "\"" + target + "\"" + " -AccessRights FullControl -Account Everyone -AuditFlags Success -InheritanceFlags ContainerInherit,ObjectInherit -PropagationFlags None")
-	err, enable, errout := gosh.RunOutput("Get-NTFSAudit -Path " + "\"" + target + "\"")
-	fmt.Println(enable)
+	err, enable, errout := gosh.RunOutput("Add-NTFSAudit -Path " + "\"" + target + "\"" + " -AccessRights FullControl -Account Everyone -AuditFlags Success -InheritanceFlags ContainerInherit,ObjectInherit -PropagationFlags None")
 	if err != nil {
 		log.Printf("error: %v\n", err)
+		fmt.Println("error from : "  + enable)
+		fmt.Print(errout)
+	}
+	err, enable1, errout := gosh.RunOutput("Get-NTFSAudit -Path " + "\"" + target + "\"")
+	if err != nil {
+		log.Printf("error: %v\n", err)
+		fmt.Println("error from : " + enable1 )
 		fmt.Print(errout)
 	}
 	fmt.Println(target + " is monitoring")
