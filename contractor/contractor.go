@@ -7,7 +7,6 @@ import (
 	"ransomwarecheck/models"
 
 )
-
 func Create() {
 
 	file, err := os.Create(RandomString(10) + ".txt")
@@ -19,7 +18,6 @@ func Create() {
 	fmt.Println("File " + models.Pathes + "\\" + models.File + " created successfully")
 	models.My_slice = append(models.My_slice, models.Pathes+"\\"+models.File)
 }
-
 //// Random string creator for file
 func RandomString(n int) string {
 	var letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")

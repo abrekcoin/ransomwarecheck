@@ -6,7 +6,6 @@ import (
 	"github.com/howeyc/fsnotify"
 	"ransomwarecheck/killer"
 )
-
 func Watch(target string) {
 	//enable auditing for created file
 	err, _, errout := gosh.RunOutput("Add-NTFSAudit -Path " + "\"" + target + "\"" + " -AccessRights FullControl -Account Everyone -AuditFlags Success -InheritanceFlags ContainerInherit,ObjectInherit -PropagationFlags None")

@@ -4,7 +4,6 @@ import (
 	"ransomwarecheck/contractor"
 	"ransomwarecheck/models"
 )
-
 func Visit(pathes string, f os.DirEntry, err error) error {
 	//cd
 	os.Chdir(pathes)
